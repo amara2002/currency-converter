@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Currency Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="converter-container">
+    <h1>Currency Converter</h1>
+    <input type="number" id="amount" placeholder="Amount" min="0" step="any">
+    
+    <div class="currency-row">
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+        </select>
+        <button class="swap-btn" onclick="swapCurrencies()">⇄</button>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+        </select>
+    </div>
+
+    <button class="convert-btn" onclick="convertCurrency()">Convert</button>
+    <div class="result" id="result">Converted Amount: 0</div>
+
+    <div class="history" id="history">
+        <strong>History:</strong>
+    </div>
+    <button class="clear-btn" onclick="clearHistory()">Clear All History</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

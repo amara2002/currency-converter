@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.converter-container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 { 
+    margin-bottom: 20px; 
+}
+
+input, select {
+    width: 100%;
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+}
+
+.currency-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swap-btn {
+    padding: 10px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 8px;
+    background: #0288d1;
+    color: white;
+    cursor: pointer;
+}
+
+.swap-btn:hover {
+    background: #0277bd;
+}
+
+button.convert-btn {
+    padding: 12px 20px; 
+    margin-top: 10px; 
+    border: none; 
+    border-radius: 8px; 
+    background: #0288d1; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+button.convert-btn:hover { 
+    background: #0277bd; 
+}
+
+button.clear-btn {
+    padding: 8px 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #e53935;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button.clear-btn:hover {
+    background: #c62828;
+}
+
+.result { 
+    margin-top: 15px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px; 
+    border-radius: 8px; 
+    background: #e3f2fd; 
+}
+
+.history { 
+    margin-top: 20px; 
+    text-align: left; 
+    max-height: 150px; 
+    overflow-y: auto; 
+    padding: 10px; 
+    background: #e3f2fd; 
+    border-radius: 8px; 
+    font-size: 14px; 
+}
+
+.history p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.history button {
+    padding: 2px 6px;
+    border: none;
+    border-radius: 5px;
+    background: #e53935;
+    color: white;
+    cursor: pointer;
+}
